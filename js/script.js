@@ -6,6 +6,9 @@
 /**
  * * This function checks if the user has selected the random number from above
 */
+
+"use strict"
+
 // eslint-disable-next-line no-unused-vars
 function checkStudentPrise() {
   // input
