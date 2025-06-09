@@ -26,3 +26,23 @@ function checkStudentPrise() {
       '<p>You must pay regular price</p>'
   }
 }
+
+function loadFormData() {
+  const savedAge = localStorage.getItem('savedAge')
+  const savedDay = localStorage.getItem('savedDay')
+
+  if (savedAge !== null) {
+    document.getElementById('age').value = savedAge
+  }
+  if (savedDay !== null) {
+    document.getElementById('the-day').value = savedDay
+  }
+}
+
+function saveFormData() {
+  const age = document.getElementById('age').value
+  const theDay = document.getElementById('the-day').value
+
+  localStorage.setItem('savedAge', age)
+  localStorage.setItem('savedDay', theDay)
+}
